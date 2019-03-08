@@ -27,6 +27,12 @@ namespace JungleOverloading
             Console.ReadKey();
         }
 
+        public void eat(string food)
+        {
+            Console.WriteLine($"{FirstName} {LastName} ate {food} at the office.");
+            Console.ReadKey();
+        }
+
         public Employee(string firstName, string lastName)
         {
             FirstName = firstName;
