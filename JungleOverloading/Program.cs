@@ -13,6 +13,7 @@ namespace JungleOverloading
             Employee sgt = new Employee("Sgt.", "Pepper");
 
             stacye.eat();
+            stacye.eat("something delicious");
         }
     }
 }
