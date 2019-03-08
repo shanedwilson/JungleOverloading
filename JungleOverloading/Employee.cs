@@ -63,6 +63,27 @@ namespace JungleOverloading
             Console.ReadKey();
         }
 
+        public void Eat(string food, List<Employee> buddies)
+        {
+            string diningPals = "";
+            for (int i = 0; i < buddies.Count; i++)
+            {
+                if (buddies[i].FirstName != FirstName)
+                {
+                    if (i != buddies.Count - 1)
+                    {
+                        diningPals += buddies[i].FirstName + ",";
+                    }
+                    else
+                    {
+                        diningPals += "and " + buddies[i].FirstName;
+                    }
+                }
+            }
+            Console.WriteLine($"{FirstName} is eating {food} at {restaurants[generateRandomNum()]} with {diningPals}.");
+            Console.ReadKey();
+        }
+
         public Employee(string firstName, string lastName)
         {
             FirstName = firstName;
